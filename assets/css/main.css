@@ -6,17 +6,29 @@ body {
 }
 
 /* Box */
-.box {
+.card {
   background: #ffffff;
   box-shadow: 0px 7px 28px rgba(0, 0, 0, 0.12);
   border-radius: 6px;
-  height: 443px;
-  position: relative;
 }
 
 /* Container */
 .container {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 360px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  height: 86px;
+  text-align: center;
 }
