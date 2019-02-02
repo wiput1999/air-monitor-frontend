@@ -1,3 +1,12 @@
+:root {
+  --color-aqi-good: #76C626;
+  --color-aqi-moderate: #FCDE42;
+  --color-aqi-sensitive: #FFA450;
+  --color-aqi-unhealthy: #FF5050;
+  --color-aqi-very-unhealthy: #C24AE0;
+  --color-aqi-harzardous: #6700A6;
+}
+
 /* Tag Override */
 body {
   background: #f7f7f7;
@@ -65,7 +74,7 @@ body {
   display: inline-block;
   padding: 0.5em;
   margin-bottom: 1em;
-  background: #FF5050;
+  background-color: #000;
   color: #FFF;
   font-weight: bold;
 }
@@ -87,3 +96,11 @@ body {
   position: relative;
   top: 0.12em;
 }
+
+/* Colours for AQI levels */
+span.aqi.aqi-good { background-color: var(--color-aqi-good) }
+span.aqi.aqi-moderate { background-color: var(--color-aqi-moderate); color: #000; }
+span.aqi.aqi-sensitive { background-color: var(--color-aqi-sensitive) }
+span.aqi.aqi-unhealthy { background-color: var(--color-aqi-unhealthy) }
+span.aqi.aqi-very-unhealthy { background-color: var(--color-aqi-very-unhealthy) }
+span.aqi.aqi-harzardous { background-color: var(--color-aqi-harzardous) }
