@@ -1,10 +1,10 @@
 :root {
-  --color-aqi-good: #76C626;
-  --color-aqi-moderate: #FCDE42;
-  --color-aqi-sensitive: #FFA450;
-  --color-aqi-unhealthy: #FF5050;
-  --color-aqi-very-unhealthy: #C24AE0;
-  --color-aqi-harzardous: #6700A6;
+  --color-aqi-good: #76c626;
+  --color-aqi-moderate: #fcde42;
+  --color-aqi-sensitive: #ffa450;
+  --color-aqi-unhealthy: #ff5050;
+  --color-aqi-very-unhealthy: #c24ae0;
+  --color-aqi-harzardous: #6700a6;
 }
 
 /* Tag Override */
@@ -13,6 +13,10 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, Roboto, "Segoe UI", Ubuntu, sans-serif;
+}
+
+canvas {
+  background: transparent;
 }
 
 /* Container */
@@ -56,7 +60,7 @@ body {
 
 .card span.pollutant {
   text-align: center;
-  color: #B7B7B7;
+  color: #b7b7b7;
 }
 
 .card span.number {
@@ -75,7 +79,7 @@ body {
   padding: 0.5em;
   margin-bottom: 1em;
   background-color: #000;
-  color: #FFF;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -98,9 +102,22 @@ body {
 }
 
 /* Colours for AQI levels */
-span.aqi.aqi-good { background-color: var(--color-aqi-good) }
-span.aqi.aqi-moderate { background-color: var(--color-aqi-moderate); color: #000; }
-span.aqi.aqi-sensitive { background-color: var(--color-aqi-sensitive) }
-span.aqi.aqi-unhealthy { background-color: var(--color-aqi-unhealthy) }
-span.aqi.aqi-very-unhealthy { background-color: var(--color-aqi-very-unhealthy) }
-span.aqi.aqi-harzardous { background-color: var(--color-aqi-harzardous) }
+span.aqi.aqi-good {
+  background-color: var(--color-aqi-good);
+}
+span.aqi.aqi-moderate {
+  background-color: var(--color-aqi-moderate);
+  color: #000;
+}
+span.aqi.aqi-sensitive {
+  background-color: var(--color-aqi-sensitive);
+}
+span.aqi.aqi-unhealthy {
+  background-color: var(--color-aqi-unhealthy);
+}
+span.aqi.aqi-very-unhealthy {
+  background-color: var(--color-aqi-very-unhealthy);
+}
+span.aqi.aqi-harzardous {
+  background-color: var(--color-aqi-harzardous);
+}
