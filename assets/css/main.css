@@ -65,7 +65,7 @@ body {
   display: inline-block;
   padding: 0.5em;
   margin-bottom: 1em;
-  background: #FF5050;
+  background-color: #000;
   color: #FFF;
   font-weight: bold;
 }
@@ -87,3 +87,11 @@ body {
   position: relative;
   top: 0.12em;
 }
+
+/* Colours for AQI levels */
+span.aqi.aqi-good { background-color: #76C626 }
+span.aqi.aqi-moderate { background-color: #FCDE42; color: #000; }
+span.aqi.aqi-sensitive { background-color: #FFA450 }
+span.aqi.aqi-unhealthy { background-color: #FF5050 }
+span.aqi.aqi-very-unhealthy { background-color: #C24AE0 }
+span.aqi.aqi-harzardous { background-color: #6700A6 }
