@@ -27,8 +27,8 @@ body {
   text-align: center;
 }
 
-.bottom img, .bottom object {
-  width: 200px;
+.bottom img {
+  width: 230px;
 }
 
 /* Card */
