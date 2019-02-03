@@ -12,7 +12,7 @@ body {
   background: #f7f7f7;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Roboto, "Segoe UI", Ubuntu, sans-serif;
+  font-family: -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
 canvas {
@@ -33,10 +33,12 @@ canvas {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-top: 2em;
+  margin-bottom: 2em;
 }
 
 .bottom {
-  height: 86px;
+  padding-bottom: 2.5em;
   text-align: center;
 }
 
@@ -52,6 +54,9 @@ canvas {
   width: 95%;
   max-width: 300px;
   padding-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 .card span.block {
@@ -66,7 +71,9 @@ canvas {
 .card span.number {
   font-size: 6em;
   font-weight: bold;
+  color: #202020;
   text-align: center;
+  text-shadow: 0 0.1em 0.35em rgba(0,0,0,0.12);
   margin-bottom: 0.06em;
 }
 
@@ -76,7 +83,7 @@ canvas {
 
 .card span.aqi {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.3em 0.5em;
   margin-bottom: 1em;
   background-color: #000;
   color: #fff;
@@ -120,4 +127,12 @@ span.aqi.aqi-very-unhealthy {
 }
 span.aqi.aqi-harzardous {
   background-color: var(--color-aqi-harzardous);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 663px) {
+  .card:last-of-type {
+    margin-bottom: 0.5em;
+  }
 }
