@@ -38,12 +38,18 @@ canvas {
 }
 
 .bottom {
-  padding-bottom: 2.5em;
+  padding-bottom: 2em;
   text-align: center;
 }
-
 .bottom img {
+  display: block;
   width: 230px;
+  margin: 0 auto 1em;
+}
+.bottom a {
+  display: inline-block;
+  color: #898989;
+  /* text-decoration: none; */
 }
 
 /* Card */
@@ -145,6 +151,9 @@ span.aqi.aqi-harzardous {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
+.modal-bg.closed {
+  display: none;
+}
 .modal-box {
   box-sizing: border-box;
   position: relative;
@@ -171,7 +180,7 @@ span.aqi.aqi-harzardous {
   list-style: none;
 }
 .modal-box .grayed {
-  color: #898989;
+  color: #b7b7b7;
 }
 
 /* Responsiveness */
