@@ -27,6 +27,21 @@
       </div>
       <div class="bottom">
         <img src="./assets/img/itkmitl-logo.png" />
+        <button class="about-btn" onclick="openModal('about-modal')">About this project</button>
+      </div>
+    </div>
+    <div class="modal-bg closed" id="about-modal">
+      <div class="modal-box">
+        <img src="./assets/img/ic-close.svg" alt="close" class="close" onclick="closeModal('about-modal')">
+        <h1>Contributors</h1>
+        <ul>
+          <li>Assoc.Prof. Dr. Panwit Tuwanut</li>
+          <li>Boonyarith Piriyothinkul</li>
+          <li>Nathan Yiangsupapaanontr</li>
+          <li>Nopparut Sae-Lim</li>
+          <li>Wiput Poothong</li>
+        </ul>
+        <p class="grayed">With Material icons and Graph.js</p>
       </div>
     </div>
     <script
@@ -115,6 +130,14 @@
 
         window.chart = new Chart(ctx, config);
       };
+    </script>
+    <script>
+      const openModal = function(modalId) {
+        document.getElementById(modalId).classList.remove('closed');
+      }
+      const closeModal = function(modalId) {
+        document.getElementById(modalId).classList.add('closed');
+      }
     </script>
   </body>
 </html>
