@@ -52,6 +52,9 @@ canvas {
   width: 95%;
   max-width: 300px;
   padding-top: 1.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 .card span.block {
@@ -122,4 +125,19 @@ span.aqi.aqi-very-unhealthy {
 }
 span.aqi.aqi-harzardous {
   background-color: var(--color-aqi-harzardous);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 663px) {
+  .content {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .bottom {
+    padding-bottom: 2em;
+  }
+  .card:last-of-type {
+    margin-bottom: 0.5em;
+  }
 }
