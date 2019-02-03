@@ -33,10 +33,12 @@ canvas {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding-top: 2em;
+  margin-bottom: 2em;
 }
 
 .bottom {
-  height: 86px;
+  padding-bottom: 2.5em;
   text-align: center;
 }
 
@@ -130,13 +132,6 @@ span.aqi.aqi-harzardous {
 /* Responsiveness */
 
 @media screen and (max-width: 663px) {
-  .content {
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
-  .bottom {
-    padding-bottom: 2em;
-  }
   .card:last-of-type {
     margin-bottom: 0.5em;
   }
