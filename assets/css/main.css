@@ -46,10 +46,14 @@ canvas {
   width: 230px;
   margin: 0 auto 1em;
 }
-.bottom a {
+.bottom .about-btn {
   display: inline-block;
+  cursor: pointer;
+  background: none;
+  border: none;
   color: #898989;
-  /* text-decoration: none; */
+  font-size: 1em;
+  font-family: -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 
 /* Card */

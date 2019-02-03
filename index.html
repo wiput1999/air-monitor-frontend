@@ -27,10 +27,10 @@
       </div>
       <div class="bottom">
         <img src="./assets/img/itkmitl-logo.png" />
-        <a href="" onclick="openModal()">About this project</a>
+        <button class="about-btn" onclick="openModal('about-modal')">About this project</button>
       </div>
     </div>
-    <div class="modal-bg closed">
+    <div class="modal-bg closed" id="about-modal">
       <div class="modal-box">
         <img src="./assets/img/ic-close.svg" alt="close" class="close">
         <h1>Contributors</h1>
@@ -130,6 +130,14 @@
 
         window.chart = new Chart(ctx, config);
       };
+    </script>
+    <script>
+      const openModal = function(modalId) {
+        document.getElementById(modalId).classList.remove('closed');
+      }
+      const closeModal = function(modalId) {
+        document.getElementById(modalId).classList.add('closed');
+      }
     </script>
   </body>
 </html>
