@@ -76,7 +76,7 @@ canvas {
 
 .card span.aqi {
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.3em 0.5em;
   margin-bottom: 1em;
   background-color: #000;
   color: #fff;
