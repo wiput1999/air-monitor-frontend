@@ -34,10 +34,12 @@ canvas {
   align-items: center;
   justify-content: center;
   padding-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: -2em;
 }
 
 .bottom {
+  box-sizing: border-box;
+  padding-top: 2em;
   padding-bottom: 2em;
   text-align: center;
 }
@@ -186,12 +188,4 @@ span.aqi.aqi-harzardous {
 }
 .modal-box .grayed {
   color: #b7b7b7;
-}
-
-/* Responsiveness */
-
-@media screen and (max-width: 663px) {
-  .card:last-of-type {
-    margin-bottom: 0.5em;
-  }
 }
